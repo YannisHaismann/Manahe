@@ -3,6 +3,12 @@ $blue: #364462;
 $orange: #EF7852;
 $ivory: #F3EBDB;
 
+// -/- MEDIA QUERIES SIZES -/-
+
+$mobile: 480px;
+$tablet: 1224px;
+$screen: 1824px;
+
 // -/- FONTS -/-
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 // font-family: 'Comfortaa', cursive;
@@ -14,4 +20,5 @@ $ivory: #F3EBDB;
 
 *{
   list-style-type: none;
+  text-decoration: none;
 }

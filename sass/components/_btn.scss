@@ -14,7 +14,46 @@
 }
 
 @mixin nav-header-btn($color, $hover-color){
+  display: inline-block;
+  position: relative;
   color: $color;
-  font-size: 24px;
+  font-size: 26px;
   font-family: 'Comfortaa', cursive;
+  transition: color 250ms;
+  width: 200px;
+  text-align: center;
+  &:hover{
+    color: $hover-color;
+    &::after{
+      animation: top-nav-hover 250ms ease-in-out forwards;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 20px;
+      background-color: $hover-color;
+    }
+  }
+  &::after{
+    left: 95px;
+    bottom: -25px;
+    position: absolute;
+    opacity: 0;
+    content: " ";
+  }
+}
+
+// -/- ANIMATIONS -/-
+
+@keyframes top-nav-hover {
+  0%{
+    transform: scaleX(0);
+    transform: scaleY(0);
+    transform: translateY(0px);
+  }
+  100%{
+    opacity: 1;
+    transform: scaleX(1);
+    transform: scaleY(1);
+    transform: translateY(-10px);
+  }
 }

@@ -2,12 +2,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
 * {
   list-style-type: none;
+  text-decoration: none;
 }
 
-.header_top-nav__internal-link-list__btn {
+@keyframes top-nav-hover {
+  0% {
+    transform: scaleX(0);
+    transform: scaleY(0);
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+    transform: scaleY(1);
+    transform: translateY(-10px);
+  }
+}
+.header_top-nav__internal-link-list__btn > a {
+  display: inline-block;
+  position: relative;
   color: #364462;
-  font-size: 24px;
+  font-size: 26px;
   font-family: "Comfortaa", cursive;
+  transition: color 250ms;
+  width: 200px;
+  text-align: center;
+}
+.header_top-nav__internal-link-list__btn > a:hover {
+  color: #EF7852;
+}
+.header_top-nav__internal-link-list__btn > a:hover::after {
+  animation: top-nav-hover 250ms ease-in-out forwards;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: #EF7852;
+}
+.header_top-nav__internal-link-list__btn > a::after {
+  left: 95px;
+  bottom: -25px;
+  position: absolute;
+  opacity: 0;
+  content: " ";
+}
+
+body {
+  border: 2px solid black;
+  width: 1824px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
