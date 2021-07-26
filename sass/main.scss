@@ -1,0 +1,6 @@
+@import "base/base";
+@import "components/btn";
+
+.header_top-nav__internal-link-list__btn{
+  @include nav-header-btn($blue, $orange);
+}

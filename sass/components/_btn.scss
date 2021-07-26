@@ -1,0 +1,20 @@
+// -/- BUTTONS -/-
+
+@mixin basic-btn($color){
+  padding: 20px;
+  color: white;
+  border-radius: 40px;
+  background-color: $color;
+  border: 3px solid $color;
+  text-align: center;
+  &:hover{
+    background-color: white;
+    color: $color;
+  }
+}
+
+@mixin nav-header-btn($color, $hover-color){
+  color: $color;
+  font-size: 24px;
+  font-family: 'Comfortaa', cursive;
+}
