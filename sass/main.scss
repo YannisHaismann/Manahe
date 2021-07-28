@@ -1,12 +1,7 @@
 @import "base/base";
 @import "components/btn";
 
-.header_top-nav__internal-link-list__btn > a{
-  @include nav-header-btn($blue, $orange);
-}
 
-body{
-  border: 2px solid black;
-  width: 1824px;
-  margin: auto;
-}
+
+@import "layouts/header";
+@import "pages/main";

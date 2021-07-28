@@ -1,0 +1,30 @@
+// -/- GENERAL -/-
+.header_top-nav{
+  background-color: $orange;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  &__logo{
+    grid-row: 1;
+    grid-column: 1;
+    width: 256px;
+  }
+  &__internal-link-list{
+    grid-row: 1;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-around;
+    & > li > a{
+      @include nav-header-btn($ivory, $blue);
+    }
+  }
+}
+
+@media (max-width: $mobile){
+  .header_top-nav{
+    &__logo{
+      width: 128px;
+    }
+  }
+}

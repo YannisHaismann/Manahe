@@ -1,44 +1,83 @@
 // -/- BUTTONS -/-
 
+@mixin top-mobile-hamburger($color, $position){
+  position: relative;
+  &::after{
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 10px;
+    background-color: $color;
+    border-radius: 10px;
+  }
+  &::before{
+    position: absolute;
+    top: 20px;
+    left: $position;
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    background-color: $color;
+    border-radius: 10px;
+  }
+  & > div{
+    position: absolute;
+    top: 40px;
+    display: inline-block;
+    width: 60px;
+    height: 10px;
+    background-color: $color;
+    border-radius: 10px;
+  }
+}
+
 @mixin basic-btn($color){
-  padding: 20px;
   color: white;
-  border-radius: 40px;
+  border-radius: 50px;
   background-color: $color;
   border: 3px solid $color;
   text-align: center;
-  &:hover{
-    background-color: white;
-    color: $color;
+  @media (min-width: $tablet) {
+    &:hover{
+      background-color: white;
+      color: $color;
+    }
   }
 }
 
 @mixin nav-header-btn($color, $hover-color){
-  display: inline-block;
-  position: relative;
-  color: $color;
-  font-size: 26px;
+  //GENERAL
+  font-size: 22px;
   font-family: 'Comfortaa', cursive;
-  transition: color 250ms;
-  width: 200px;
+  color: $color;
   text-align: center;
-  &:hover{
-    color: $hover-color;
-    &::after{
-      animation: top-nav-hover 250ms ease-in-out forwards;
-      display: block;
-      width: 10px;
-      height: 10px;
-      border-radius: 20px;
-      background-color: $hover-color;
+
+  @media (min-width: $tablet) {
+    display: inline-block;
+    position: relative;
+    transition: color 250ms;
+    width: 200px;
+    &:hover {
+      color: $hover-color;
+
+      &::after {
+        animation: top-nav-hover 250ms ease-in-out forwards;
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 20px;
+        background-color: $hover-color;
+      }
     }
-  }
-  &::after{
-    left: 95px;
-    bottom: -25px;
-    position: absolute;
-    opacity: 0;
-    content: " ";
+    &::after {
+      left: 95px;
+      bottom: -25px;
+      position: absolute;
+      opacity: 0;
+      content: " ";
+    }
   }
 }
 
