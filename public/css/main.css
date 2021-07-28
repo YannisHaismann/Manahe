@@ -21,6 +21,124 @@
     transform: translateY(-10px);
   }
 }
+.footer_copyright {
+  background-color: #364462;
+  color: white;
+  font-family: "Comfortaa", cursive;
+  height: 40px;
+}
+
+@media (max-width: 1224px) {
+  .footer-desktop_content {
+    display: none;
+  }
+
+  .footer-mobile_content {
+    border-top: 1px solid #6a80ad;
+    position: relative;
+    height: 80px;
+    background-color: #364462;
+    font-family: "Comfortaa", cursive;
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer-mobile_content a {
+    margin-top: 24px;
+    color: white;
+    font-size: 12px;
+  }
+  .footer-mobile_content::after {
+    content: "";
+    top: 58px;
+    position: absolute;
+    display: block;
+    width: 90%;
+    height: 2px;
+    background-color: lightslategrey;
+    border-radius: 10px;
+  }
+
+  .footer_copyright {
+    text-align: center;
+    font-size: 12px;
+  }
+}
+@media (min-width: 1224px) {
+  .footer-mobile_content {
+    display: none;
+  }
+
+  .footer-desktop_content {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #6a80ad;
+    background-color: #364462;
+  }
+  .footer-desktop_content * {
+    color: white;
+    font-family: "Comfortaa", cursive;
+    font-size: 12px;
+  }
+  .footer-desktop_content__top {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+  .footer-desktop_content__top > div {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+  .footer-desktop_content__top > div > * {
+    text-align: center;
+    margin: 8px;
+  }
+  .footer-desktop_content__top > div > h3 {
+    margin: 10px;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .footer-desktop_content__contacter {
+    border: 2px solid white;
+    width: 350px;
+    height: 50px;
+    border-radius: 50px;
+    display: block;
+    margin: auto 0px auto 0px;
+    position: relative;
+  }
+  .footer-desktop_content__contacter__text {
+    font-size: 14px;
+    position: absolute;
+    top: 18px;
+    left: 20px;
+  }
+  .footer-desktop_content__contacter__mail {
+    font-size: 14px;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    color: white;
+    border-radius: 50px;
+    background-color: #EF7852;
+    border: 3px solid #EF7852;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+  }
+
+  .footer_copyright {
+    border-top: 2px #5f6f7e solid;
+    font-family: "Comfortaa", cursive;
+    font-size: 16px;
+    height: 60px;
+    text-align: center;
+  }
+  .footer_copyright > p {
+    margin-top: 20px;
+    font-weight: 700;
+  }
+}
 .header_top-nav {
   background-color: #EF7852;
   padding: 20px;
