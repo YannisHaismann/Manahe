@@ -1,4 +1,4 @@
-// -/- GENERAL -/-
+// -/ GENERAL /-
 
 .footer_copyright{
   background-color: $blue;
@@ -7,7 +7,7 @@
   height: 40px;
 }
 
-// -/- MOBILE && TABLET-/-
+// -/ MOBILE && TABLET/-
 
 @media (max-width: $tablet) {
   .footer-desktop_content{
@@ -44,7 +44,7 @@
 }
 
 
-// -/- DESKTOP -/-
+// -/ DESKTOP /-
 
 @media (min-width: $tablet) {
   .footer-mobile_content{

@@ -141,29 +141,61 @@
 }
 .header_top-nav {
   background-color: #EF7852;
-  padding: 20px;
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
 }
-.header_top-nav__logo {
-  grid-row: 1;
-  grid-column: 1;
-  width: 256px;
-}
-.header_top-nav__internal-link-list {
-  grid-row: 1;
-  grid-column: 2/3;
-  display: flex;
-  justify-content: space-around;
-}
-.header_top-nav__internal-link-list > li > a {
-  font-size: 22px;
+.header_top-nav * {
+  color: white;
   font-family: "Comfortaa", cursive;
-  color: #F3EBDB;
-  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .header_top-nav {
+    padding: 20px 0px 0px 35px;
+  }
+  .header_top-nav__logo {
+    width: 156px;
+  }
+}
+@media (max-width: 1224px) {
+  .header_top-nav {
+    padding: 30px 0px 0px 50px;
+  }
+  .header_top-nav__logo {
+    width: 220px;
+  }
+  .header_top-nav__internal-link-list * {
+    display: none;
+  }
 }
 @media (min-width: 1224px) {
+  .header_top-nav {
+    padding: 50px 50px 0px 150px;
+    display: grid;
+  }
+  .header_top-nav__logo {
+    width: 256px;
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .header_top-nav__mobile-btn {
+    display: none;
+  }
+  .header_top-nav__internal-link-list {
+    display: flex;
+    justify-content: space-around;
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .header_top-nav__internal-link-list > li {
+    margin-top: 26px;
+  }
+  .header_top-nav__internal-link-list > li > a {
+    font-size: 22px;
+    font-family: "Comfortaa", cursive;
+    color: white;
+    text-align: center;
+  }
+}
+@media (min-width: 1224px) and (min-width: 1224px) {
   .header_top-nav__internal-link-list > li > a {
     display: inline-block;
     position: relative;
@@ -189,10 +221,12 @@
     content: " ";
   }
 }
-
-@media (max-width: 480px) {
+@media (min-width: 1824px) {
   .header_top-nav__logo {
-    width: 128px;
+    width: 312px;
+  }
+  .header_top-nav__internal-link-list > li > a {
+    font-size: 30px !important;
   }
 }
 .main_header-title {
@@ -291,7 +325,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 700px;
+    height: 800px;
   }
   .main_header-title__service {
     grid-column: 2;
