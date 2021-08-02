@@ -1,7 +1,7 @@
-//.design_top-content
+//.site-internet_top-content
 
 @media (max-width: $mobile) {
-  .design_top-content {
+  .site-internet_top-content {
     @include service-section(white, white, $blue, $blue, 14px, $blue, 10px, 15px, true, 5px, 9px);
     height: 700px!important;
     background-color: $orange;
@@ -24,47 +24,47 @@
     }
 
     & > aside {
-      background-image: url("../img/design-3D.png");
+      background-image: url("../img/ordinateur.png");
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: right;
       grid-row: 2 / 6;
       grid-column: 1 / 11;
       position: relative;
-      width: 280px;
+      width: 310px;
       margin: 0px auto;
 
       & > div {
-        height: 10px;
+        height: 6px;
 
         & > img {
           margin-left: 15px;
         }
       }
 
-      & > .design_top-content__img__btn-identite-graphique {
+      & > .site-internet_top-content__img__btn__realisation-de-maquette {
         position: absolute;
-        top: 70px;
-        right: 48%;
-      }
-
-      & > .design_top-content__img__btn-support-print {
-        position: absolute;
-        top: 120px;
+        top: 100px;
         right: 40%;
       }
 
-      & > .design_top-content__img__btn-support-de-communication {
+      & > .site-internet_top-content__img__btn__integration-du-site {
         position: absolute;
-        top: 170px;
-        right: 41%;
+        top: 150px;
+        right: 34%;
+      }
+
+      & > .site-internet_top-content__img__btn__maintenance-du-site-internet {
+        position: absolute;
+        top: 200px;
+        right: 37%;
       }
     }
   }
 }
 
 @media (min-width: $mobile) and (max-width: $tablet){
-  .design_top-content {
+  .site-internet_top-content {
     @media (min-width: 950px){
     height: 450px!important;
     }
@@ -92,8 +92,8 @@
       }
     }
     & > aside{
-      background-image: url("../img/design-3D.png");
-      background-size: 90%;
+      background-image: url("../img/ordinateur.png");
+      background-size: 100%;
       background-repeat: no-repeat;
       background-position: right;
       @media (max-width: 950px){
@@ -113,27 +113,27 @@
           margin-left: 20px;
         }
       }
-      & > .design_top-content__img__btn-identite-graphique{
+      & > .site-internet_top-content__img__btn__realisation-de-maquette{
         position: absolute;
         top: 100px;
         right: 220px;
       }
-      & > .design_top-content__img__btn-support-print{
+      & > .site-internet_top-content__img__btn__integration-du-site{
         position: absolute;
         top: 150px;
         right: 170px;
       }
-      & > .design_top-content__img__btn-support-de-communication{
+      & > .site-internet_top-content__img__btn__maintenance-du-site-internet{
         position: absolute;
         top: 200px;
-        right: 210px;
+        right: 200px;
       }
     }
   }
 }
 
 @media (min-width: $tablet) and (max-width: $screen){
-  .design_top-content{
+  .site-internet_top-content{
     height: 650px!important;
     background: $orange;
     @include service-section(white, white, $blue, $blue, 24px, $blue, 15px, 36px, true, 10px, 16px);
@@ -153,10 +153,10 @@
       }
     }
     & > aside{
-      background-image: url("../img/design-3D.png");
+      background-image: url("../img/ordinateur.png");
       background-repeat: no-repeat;
       background-position: right;
-      background-size: 95%;
+      background-size: 100%;
       grid-row: 1 / 12;
       grid-column: 12 / 22;
       position: relative;
@@ -167,24 +167,24 @@
           margin-left: 30px;
         }
       }
-      & > .design_top-content__img__btn-identite-graphique{
+      & > .site-internet_top-content__img__btn__realisation-de-maquette{
         top: 200px;
         right: 240px;
       }
-      & > .design_top-content__img__btn-support-print{
+      & > .site-internet_top-content__img__btn__integration-du-site{
         top: 280px;
         right: 200px;
       }
-      & > .design_top-content__img__btn-support-de-communication{
+      & > .site-internet_top-content__img__btn__maintenance-du-site-internet{
         top: 360px;
-        right: 245px;
+        right: 225px;
       }
     }
   }
 }
 
 @media (min-width: $screen){
-  .design_top-content{
+  .site-internet_top-content{
     height: 800px!important;
     background: $orange;
     @include service-section(white, white, $blue, $blue, 28px, $blue, 15px, 36px, true, 10px, 18px);
@@ -203,10 +203,10 @@
       }
     }
     & > aside{
-      background-image: url("../img/design-3D.png");
+      background-image: url("../img/ordinateur.png");
       background-repeat: no-repeat;
       background-position: right;
-      background-size: 95%;
+      background-size: 100%;
       grid-row: 1 / 12;
       grid-column: 13 / 21;
       position: relative;
@@ -217,25 +217,25 @@
           margin-left: 30px;
         }
       }
-      & > .design_top-content__img__btn-identite-graphique{
-        top: 240px;
+      & > .site-internet_top-content__img__btn__realisation-de-maquette{
+        top: 270px;
         right: 340px;
       }
-      & > .design_top-content__img__btn-support-print{
-        top: 320px;
+      & > .site-internet_top-content__img__btn__integration-du-site{
+        top: 350px;
         right: 300px;
       }
-      & > .design_top-content__img__btn-support-de-communication{
-        top: 400px;
-        right: 340px;
+      & > .site-internet_top-content__img__btn__maintenance-du-site-internet{
+        top: 430px;
+        right: 320px;
       }
     }
   }
 }
 
-//.design_identite-visuelle
+//.site-internet_realisation-de-maquette
 @media (max-width: $mobile){
-  .design_identite-visuelle{
+  .site-internet_realisation-de-maquette{
     background: white;
     @include service-section($blue, white, $blue, $blue, 12px, $blue, 15px, 36px, true, 10px, 16px);
     height: 700px!important;
@@ -255,7 +255,7 @@
       }
     }
     & > aside{
-      background-image: url("../img/identite-graphique-3d.png");
+      background-image: url("../img/integration-3d.png");
       background-repeat: no-repeat;
       background-position: right;
       background-size: 100%;
@@ -266,7 +266,7 @@
 }
 
 @media (min-width: $mobile) and (max-width: $tablet){
-  .design_identite-visuelle {
+  .site-internet_realisation-de-maquette {
     @media (min-width: 950px){
       height: 450px!important;
     }
@@ -293,7 +293,7 @@
       }
     }
     & > aside{
-      background-image: url("../img/identite-graphique-3d.png");
+      background-image: url("../img/integration-3d.png");
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: right;
@@ -313,7 +313,7 @@
 }
 
 @media (min-width: $tablet) and (max-width: $screen){
-  .design_identite-visuelle{
+  .site-internet_realisation-de-maquette{
     height: 650px!important;
     background: white;
     @include service-section($blue, white, $blue, $blue, 18px, $blue, 15px, 36px, true, 10px, 16px);
@@ -333,7 +333,7 @@
       }
     }
     & > aside{
-      background-image: url("../img/identite-graphique-3d.png");
+      background-image: url("../img/integration-3d.png");
       background-repeat: no-repeat;
       background-position: right;
       background-size: 100%;
@@ -352,7 +352,7 @@
 }
 
 @media (min-width: $screen){
-  .design_identite-visuelle{
+  .site-internet_realisation-de-maquette{
     background: white;
     height: 800px!important;
     @include service-section($blue, white, $blue, $blue, 24px, $blue, 15px, 36px, true, 10px, 18px);
@@ -372,7 +372,7 @@
       }
     }
     & > aside{
-      background-image: url("../img/identite-graphique-3d.png");
+      background-image: url("../img/integration-3d.png");
       background-repeat: no-repeat;
       background-position: right;
       background-size: 100%;
@@ -385,9 +385,9 @@
 }
 
 
-//.design_support-de-communication
+//.site-internet_integration-de-maquette
 @media (max-width: $mobile){
-  .design_support-de-communication{
+  .site-internet_integration-de-maquette{
     background: white;
     @include service-section($blue, white, $blue, $blue, 12px, $blue, 15px, 36px, true, 10px, 16px);
     height: 700px!important;
@@ -407,7 +407,7 @@
       }
     }
     & > aside{
-      background-image: url("../img/support-com-3d.png");
+      background-image: url("../img/maquette-3d.png");
       background-repeat: no-repeat;
       background-position: right;
       background-size: 100%;
@@ -418,7 +418,7 @@
 }
 
 @media (min-width: $mobile) and (max-width: $tablet){
-  .design_support-de-communication {
+  .site-internet_integration-de-maquette {
     @media (min-width: 950px){
       height: 450px!important;
     }
@@ -445,7 +445,7 @@
       }
     }
     & > aside{
-      background-image: url("../img/support-com-3d.png");
+      background-image: url("../img/maquette-3d.png");
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: right;
@@ -465,7 +465,7 @@
 }
 
 @media (min-width: $tablet) and (max-width: $screen){
-  .design_support-de-communication{
+  .site-internet_integration-de-maquette{
     height: 650px!important;
     background: white;
     @include service-section($blue, white, $blue, $blue, 18px, $blue, 15px, 36px, true, 10px, 16px);
@@ -485,7 +485,7 @@
       }
     }
     & > aside{
-      background-image: url("../img/support-com-3d.png");
+      background-image: url("../img/maquette-3d.png");
       background-repeat: no-repeat;
       background-position: right;
       background-size: 100%;
@@ -504,7 +504,7 @@
 }
 
 @media (min-width: $screen){
-  .design_support-de-communication{
+  .site-internet_integration-de-maquette{
     background: white;
     height: 800px!important;
     @include service-section($blue, white, $blue, $blue, 24px, $blue, 15px, 36px, true, 10px, 18px);
@@ -521,7 +521,7 @@
       }
     }
     & > aside{
-      background-image: url("../img/support-com-3d.png");
+      background-image: url("../img/maquette-3d.png");
       background-repeat: no-repeat;
       background-position: right;
       background-size: 100%;
@@ -533,9 +533,9 @@
   }
 }
 
-//.design_support-print
+//.site-internet_maintenance-du-site
 @media (max-width: $mobile){
-  .design_support-print{
+  .site-internet_maintenance-du-site{
     background: white;
     @include service-section($blue, white, $blue, $blue, 12px, $blue, 15px, 36px, true, 10px, 16px);
     height: 700px!important;
@@ -555,7 +555,7 @@
       }
     }
     & > aside{
-      background-image: url("../img/support-print-3d.png");
+      background-image: url("../img/maintenance-3d.png");
       background-repeat: no-repeat;
       background-position: right;
       background-size: 100%;
@@ -566,7 +566,7 @@
 }
 
 @media (min-width: $mobile) and (max-width: $tablet){
-  .design_support-print {
+  .site-internet_maintenance-du-site {
     @media (min-width: 950px){
       height: 450px!important;
     }
@@ -593,7 +593,7 @@
       }
     }
     & > aside{
-      background-image: url("../img/support-print-3d.png");
+      background-image: url("../img/maintenance-3d.png");
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: right;
@@ -613,7 +613,7 @@
 }
 
 @media (min-width: $tablet) and (max-width: $screen){
-  .design_support-print{
+  .site-internet_maintenance-du-site{
     height: 650px!important;
     background: white;
     @include service-section($blue, white, $blue, $blue, 18px, $blue, 15px, 36px, true, 10px, 16px);
@@ -633,7 +633,7 @@
       }
     }
     & > aside{
-      background-image: url("../img/support-print-3d.png");
+      background-image: url("../img/maintenance-3d.png");
       background-repeat: no-repeat;
       background-position: right;
       background-size: 100%;
@@ -652,7 +652,7 @@
 }
 
 @media (min-width: $screen){
-  .design_support-print{
+  .site-internet_maintenance-du-site{
     background: white;
     height: 800px!important;
     @include service-section($blue, white, $blue, $blue, 24px, $blue, 15px, 36px, true, 10px, 18px);
@@ -672,7 +672,7 @@
       }
     }
     & > aside{
-      background-image: url("../img/support-print-3d.png");
+      background-image: url("../img/maintenance-3d.png");
       background-repeat: no-repeat;
       background-position: right;
       background-size: 100%;
@@ -684,7 +684,7 @@
   }
 }
 
-//.design_devis
-.design_devis{
+//.site-internet_devis
+.site-internet_devis{
   @include mail-contact();
 }

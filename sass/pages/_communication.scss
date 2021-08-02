@@ -395,6 +395,7 @@
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(10, 1fr);
     & > article{
+      width: 800px;
       grid-column: 1 / 11;
       grid-row: 6 / 11;
       & > p{
@@ -524,7 +525,7 @@
       }
     }
     & > aside{
-      background-image: url("../img/plan-com-3D.png");
+      background-image: url("../img/redaction-3D.png");
       background-repeat: no-repeat;
       background-position: right;
       background-size: 100%;
@@ -558,7 +559,7 @@
       }
     }
     & > aside{
-      background-image: url("../img/plan-com-3D.png");
+      background-image: url("../img/reseaux-sociaux-3d.png");
       background-repeat: no-repeat;
       background-position: right;
       background-size: 100%;
@@ -596,7 +597,7 @@
       }
     }
     & > aside{
-      background-image: url("../img/plan-com-3D.png");
+      background-image: url("../img/reseaux-sociaux-3d.png");
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: right;
@@ -636,7 +637,7 @@
       }
     }
     & > aside{
-      background-image: url("../img/plan-com-3D.png");
+      background-image: url("../img/reseaux-sociaux-3d.png");
       background-repeat: no-repeat;
       background-position: right;
       background-size: 100%;
@@ -675,7 +676,7 @@
       }
     }
     & > aside{
-      background-image: url("../img/plan-com-3D.png");
+      background-image: url("../img/reseaux-sociaux-3d.png");
       background-repeat: no-repeat;
       background-position: right;
       background-size: 100%;
