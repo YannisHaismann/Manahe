@@ -46,6 +46,25 @@
     }
   }
 }
+@mixin basic-btn-no-hover($text-color, $background-color, $border-color){
+  color: $text-color;
+  border-radius: 50px;
+  background-color: $background-color;
+  border: 2px solid $border-color;
+  text-align: center;
+  font-weight: 700;
+}
+@mixin basic-btn-no-hover-with-cross($text-color, $background-color, $border-color, $cross-size){
+  color: $text-color;
+  border-radius: 50px;
+  background-color: $background-color;
+  border: 2px solid $border-color;
+  text-align: center;
+  font-weight: 700;
+  & > img{
+    width: $cross-size;
+  }
+}
 
 @mixin nav-header-btn($color, $hover-color){
   //GENERAL

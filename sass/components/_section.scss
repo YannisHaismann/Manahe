@@ -1,0 +1,35 @@
+// SERVICES SECTIONS
+
+@mixin service-section($text-color, $btn-text-color, $btn-background-color, $btn-border-color, $text-size, $point-color, $padding-vertical, $padding-side, $bool-cross, $cross-size, $btn-text-size){
+  font-family: 'Comfortaa', cursive;
+  padding: 20px;
+  height: 550px;
+    & > article{
+      color: $text-color;
+      & > h2, h1{
+        font-size: ($text-size*3.5);
+        font-weight: 700;
+        & > span{
+          color: $point-color;
+          font-size: ($text-size*4);
+        }
+      }
+      & > p{
+        font-size: $text-size;
+        line-height: 1.4;
+      }
+    }
+    & > aside{
+      & > div{
+        @if($bool-cross){
+          @include basic-btn-no-hover-with-cross($btn-text-color, $btn-background-color, $btn-border-color, $cross-size);
+        }@else {
+          @include basic-btn-no-hover($btn-text-color, $btn-background-color, $btn-border-color);
+        }
+        display: inline-block;
+        font-size: $btn-text-size;
+        padding: $padding-vertical $padding-side;
+      }
+    }
+  }
+

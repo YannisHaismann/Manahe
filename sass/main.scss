@@ -1,7 +1,15 @@
 @import "base/base";
-@import "components/btn";
 
+@import "components/btn";
+@import "components/box";
+@import "components/section";
 
 @import "layouts/footer";
 @import "layouts/header";
+@import "layouts/mail-contact";
+
 @import "pages/main";
+@import "pages/a-propos";
+@import "pages/services";
+@import "pages/communication";
+@import "pages/design";

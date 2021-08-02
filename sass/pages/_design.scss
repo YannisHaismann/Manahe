@@ -1,0 +1,634 @@
+// .design_top-content
+
+.design_top-content{
+  background-color: white;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  &__text-top{
+    margin: 200px 25px 0px 25px;
+    display: inline-block;
+    color: $orange;
+    font-weight: 700;
+  }
+  &__text-bottom{
+    color: $blue
+  }
+}
+
+@media (max-width: $mobile) {
+  .a-propos_header-title{
+    height: 500px;
+    &__text-top{
+      font-size: 48px;
+    }
+    &__text-bottom{
+      font-size: 24px;
+    }
+  }
+}
+
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .a-propos_header-title{
+    height: 500px;
+    &__text-top{
+      font-size: 64px;
+    }
+    &__text-bottom{
+      font-size: 32px;
+    }
+  }
+}
+
+@media (min-width: $tablet) and (max-width: $screen) {
+  .a-propos_header-title{
+    height: 500px;
+    &__text-top{
+      font-size: 84px;
+    }
+    &__text-bottom{
+      font-size: 50px;
+    }
+  }
+}
+
+@media (min-width: $screen) {
+  .a-propos_header-title{
+    height: 500px;
+    &__text-top{
+      font-size: 92px;
+    }
+    &__text-bottom{
+      font-size: 54px;
+    }
+  }
+}
+
+// .a-propos_main-content
+
+.a-propos_main-content{
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+}
+
+// -/- MOBILE -/-
+@media (max-width: $mobile) {
+
+  // &__first
+  .a-propos_main-content__first-box {
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    @include a-propos-box(white, $ivory, 0px, rgba(0, 0, 0, 0));
+    background: linear-gradient(to right, lighten($orange, 5), $orange);
+    margin: 20px 70px 20px 30px;
+
+    & > h3 {
+      font-size: 18px;
+    }
+
+    & > p {
+      font-size: 12px;
+    }
+  }
+
+
+  // &__two
+  .a-propos_main-content__second-box {
+    grid-column: 1 / 6;
+    grid-row: 3 / 4;
+    @include a-propos-box(white, $ivory, 0px, rgba(0, 0, 0, 0));
+    background: linear-gradient(to right, lighten($blue, 5), $blue);
+    margin: 100px 30px 20px 70px;
+
+    & > h3 {
+      font-size: 18px;
+    }
+
+    & > p {
+      font-size: 12px;
+    }
+  }
+
+
+  // &__third
+  .a-propos_main-content__third-box {
+    Vgrid-row: 2 / 3;
+    position: relative;
+    grid-column: 1 / 6;
+    @include a-propos-box($orange, $orange, 3px, $orange);
+    background-color: white;
+    margin: 20px 30px 20px 70px;
+
+    & > h3 {
+      font-size: 18px;
+    }
+
+    & > p {
+      font-size: 12px;
+    }
+
+    & > div {
+      position: absolute;
+      text-align: center;
+      width: 75px;
+      padding: 10px;
+      background-color: $orange;
+      border-radius: 50px;
+      color: white;
+      font-size: 9px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 390px) {
+      .a-propos_main-content__third-box__btn-perseverance {
+        left: 10px;
+        bottom: -16px;
+      }
+      .a-propos_main-content__third-box__btn-motivation {
+        left: 110px;
+        bottom: -16px;
+      }
+    }
+
+    &__btn-perseverance {
+      left: 30%;
+      bottom: -16px;
+    }
+
+    &__btn-motivation {
+      left: 65%;
+      bottom: -16px;
+    }
+  }
+
+
+  // &__four
+  .a-propos_main-content__four-box {
+    grid-column: 1 / 6;
+    grid-row: 6 / 7;
+    @include a-propos-box(white, $ivory, 0px, rgba(0, 0, 0, 0));
+    background: linear-gradient(to right, lighten($orange, 5), $orange);
+    margin: 20px 30px 20px 70px;
+
+    & > h3 {
+      font-size: 18px;
+    }
+
+    & > p {
+      font-size: 12px;
+    }
+  }
+
+
+  // &__five
+  .a-propos_main-content__five-box {
+    grid-column: 1 / 6;
+    grid-row: 5 / 6;
+    @include a-propos-box(white, $ivory, 0px, rgba(0, 0, 0, 0));
+    background: linear-gradient(to right, lighten($blue, 5), $blue);
+    margin: 100px 70px 20px 30px;
+
+    & > h3 {
+      font-size: 18px;
+    }
+
+    & > p {
+      font-size: 12px;
+    }
+  }
+
+
+  // &__six
+  .a-propos_main-content__six-box {
+    position: relative;
+    grid-column: 1 / 6;
+    @include a-propos-box($blue, $blue, 3px, $blue);
+    background-color: white;
+    margin: 20px 70px 20px 30px;
+
+    & > h3 {
+      font-size: 18px;
+    }
+
+    & > p {
+      font-size: 12px;
+    }
+
+    & > div {
+      position: absolute;
+      text-align: center;
+      width: 120px;
+      padding: 10px;
+      background-color: $blue;
+      border-radius: 50px;
+      color: white;
+      font-size: 9px;
+      font-weight: 700;
+      top: -15px;
+      left: 45%;
+    }
+
+    @media (max-width: 390px) {
+      .a-propos_main-content__six-box__btn-danslesnuages {
+        left: 30px;
+      }
+    }
+  }
+
+
+  // &__seven
+
+  .a-propos_main-content__seven-box {
+    grid-column: 1 / 6;
+    grid-row: 4 / 5;
+    @include a-propos-box(white, $ivory, 0px, rgba(0, 0, 0, 0));
+    background: linear-gradient(to right, lighten($orange, 5), $orange);
+    margin: 20px 70px 20px 30px;
+
+    & > h3 {
+      font-size: 18px;
+    }
+
+    & > p {
+      font-size: 12px;
+    }
+  }
+}
+
+
+
+
+// -/- TABLET -/-
+@media (min-width: $mobile) and (max-width: $tablet) {
+
+  // &__first
+  .a-propos_main-content__first-box {
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    @include a-propos-box(white, $ivory, 0px, rgba(0, 0, 0, 0));
+    background: linear-gradient(to right, lighten($orange, 5), $orange);
+    margin: auto auto 30px;
+    width: 70%;
+
+    & > h3 {
+      font-size: 22px;
+    }
+
+    & > p {
+      font-size: 14px;
+    }
+  }
+
+  // &__two
+  .a-propos_main-content__second-box {
+    grid-column: 1 / 6;
+    grid-row: 3 / 4;
+    @include a-propos-box(white, $ivory, 0px, rgba(0, 0, 0, 0));
+    background: linear-gradient(to right, lighten($blue, 5), $blue);
+    margin: auto auto 30px;
+    width: 70%;
+
+    & > h3 {
+      font-size: 22px;
+    }
+
+    & > p {
+      font-size: 14px;
+    }
+  }
+
+
+  // &__third
+  .a-propos_main-content__third-box {
+    grid-row: 2 / 3;
+    position: relative;
+    grid-column: 1 / 6;
+    @include a-propos-box($orange, $orange, 3px, $orange);
+    background-color: white;
+    margin: auto auto 80px;
+    width: 70%;
+
+    & > h3 {
+      font-size: 22px;
+    }
+
+    & > p {
+      font-size: 14px;
+    }
+
+    & > div {
+      position: absolute;
+      text-align: center;
+      width: 85px;
+      padding: 12px;
+      background-color: $orange;
+      border-radius: 50px;
+      color: white;
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+    &__btn-perseverance {
+      right: 40px;
+      bottom: -18px;
+    }
+
+    &__btn-motivation {
+      right: 170px;
+      bottom: -18px;
+    }
+  }
+
+
+  // &__four
+  .a-propos_main-content__four-box {
+    grid-column: 1 / 6;
+    grid-row: 6 / 7;
+    @include a-propos-box(white, $ivory, 0px, rgba(0, 0, 0, 0));
+    background: linear-gradient(to right, lighten($orange, 5), $orange);
+    margin: auto auto 30px;
+    width: 70%;
+
+    & > h3 {
+      font-size: 22px;
+    }
+
+    & > p {
+      font-size: 14px;
+    }
+  }
+
+
+  // &__five
+  .a-propos_main-content__five-box {
+    grid-column: 1 / 6;
+    grid-row: 5 / 6;
+    @include a-propos-box(white, $ivory, 0px, rgba(0, 0, 0, 0));
+    background: linear-gradient(to right, lighten($blue, 5), $blue);
+    margin: auto auto 30px;
+    width: 70%;
+
+    & > h3 {
+      font-size: 22px;
+    }
+
+    & > p {
+      font-size: 14px;
+    }
+  }
+
+  // &__six
+  .a-propos_main-content__six-box {
+    position: relative;
+    grid-column: 1 / 6;
+    @include a-propos-box($blue, $blue, 3px, $blue);
+    background-color: white;
+    margin: auto auto 30px;
+    width: 70%;
+
+    & > h3 {
+      font-size: 22px;
+    }
+
+    & > p {
+      font-size: 14px;
+    }
+
+    & > div {
+      position: absolute;
+      text-align: center;
+      width: 140px;
+      padding: 12px;
+      background-color: $blue;
+      border-radius: 50px;
+      color: white;
+      font-size: 10px;
+      font-weight: 700;
+      top: -18px;
+      right: 100px;
+    }
+  }
+
+  // &__seven
+  .a-propos_main-content__seven-box {
+    grid-column: 1 / 6;
+    grid-row: 4 / 5;
+    @include a-propos-box(white, $ivory, 0px, rgba(0, 0, 0, 0));
+    background: linear-gradient(to right, lighten($orange, 5), $orange);
+    margin: auto auto 80px;
+    width: 70%;
+
+    & > h3 {
+      font-size: 22px;
+    }
+
+    & > p {
+      font-size: 14px;
+    }
+  }
+}
+
+
+  // -/- SCREEN -/-
+  @media (min-width: $tablet) {
+    .a-propos_main-content {
+      grid-template-columns: repeat(44, 1fr);
+      grid-template-rows: repeat(12, 200px);
+    }
+
+    // &__first
+    .a-propos_main-content__first-box {
+      grid-column: 26 / 42;
+      grid-row: 1 / 3;
+      @include a-propos-box(white, $ivory, 0px, rgba(0, 0, 0, 0));
+      background: linear-gradient(to right, lighten($orange, 5), $orange);
+      margin: 20px 0px 20px 0px;
+      height: 380px;
+
+      & > h3 {
+        font-size: 32px;
+      }
+
+      & > p {
+        font-size: 20px;
+      }
+    }
+
+
+    // &__two
+    .a-propos_main-content__second-box {
+      grid-column: 27 / 42;
+      grid-row: 6 / 8;
+      @include a-propos-box(white, $ivory, 0px, rgba(0, 0, 0, 0));
+      background: linear-gradient(to right, lighten($blue, 5), $blue);
+      margin: 80px 0px 20px 0px;
+      height: 380px;
+
+      & > h3 {
+        font-size: 32px;
+      }
+
+      & > p {
+        font-size: 20px;
+      }
+    }
+
+
+    // &__third
+    .a-propos_main-content__third-box {
+      grid-row: 3 / 5;
+      position: relative;
+      grid-column: 27 / 42;
+      @include a-propos-box($orange, $orange, 3px, $orange);
+      background-color: white;
+      margin: 100px 0px 20px 0px;
+      height: 320px;
+
+      & > h3 {
+        font-size: 32px;
+      }
+
+      & > p {
+        font-size: 20px;
+      }
+
+      & > div {
+        position: absolute;
+        text-align: center;
+        width: 145px;
+        padding: 15px;
+        background-color: $orange;
+        border-radius: 50px;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      &__btn-perseverance {
+        right: 30px;
+        bottom: -24px;
+      }
+
+      &__btn-motivation {
+        right: 230px;
+        bottom: -24px;
+      }
+    }
+
+
+    // &__four
+    .a-propos_main-content__four-box {
+      grid-column: 7 / 25;
+      grid-row: 4 / 7;
+      @include a-propos-box(white, $ivory, 0px, rgba(0, 0, 0, 0));
+      background: linear-gradient(to right, lighten($orange, 5), $orange);
+      margin: 150px 0px 0px 0px;
+      height: 350px;
+
+      & > h3 {
+        font-size: 32px;
+      }
+
+      & > p {
+        font-size: 20px;
+      }
+    }
+
+
+    // &__five
+    .a-propos_main-content__five-box {
+      grid-column: 5 / 24;
+      grid-row: 2 / 4;
+      @include a-propos-box(white, $ivory, 0px, rgba(0, 0, 0, 0));
+      background: linear-gradient(to right, lighten($blue, 5), $blue);
+      margin: 100px 0px 20px 0px;
+      height: 350px;
+
+      & > h3 {
+        font-size: 32px;
+      }
+
+      & > p {
+        font-size: 20px;
+      }
+    }
+
+    // &__six
+    .a-propos_main-content__six-box {
+      position: relative;
+      grid-column: 5 / 24;
+      grid-row: 7 / 9;
+      @include a-propos-box($blue, $blue, 3px, $blue);
+      background-color: white;
+      margin: 20px 0px 20px 0px;
+      height: 360px;
+
+      & > h3 {
+        font-size: 32px;
+      }
+
+      & > p {
+        font-size: 20px;
+      }
+
+      & > div {
+        position: absolute;
+        text-align: center;
+        width: 220px;
+        padding: 15px;
+        background-color: $blue;
+        border-radius: 50px;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        top: -24px;
+        right: 100px;
+      }
+    }
+
+    // &__seven
+    .a-propos_main-content__seven-box {
+      grid-column: 25 / 41;
+      grid-row: 8 / 10;
+      @include a-propos-box(white, $ivory, 0px, rgba(0, 0, 0, 0));
+      background: linear-gradient(to right, lighten($orange, 5), $orange);
+      margin: 120px 0px 20px 0px;
+      height: 380px;
+
+      & > h3 {
+        font-size: 32px;
+      }
+
+      & > p {
+        font-size: 20px;
+      }
+    }
+  }
+
+
+    // -/- ULTRA WIDE -/-
+    @media (min-width: $screen) {
+      .a-propos_main-content {
+        & > div {
+          & > h3 {
+            font-size: 36px;
+          }
+
+          & > p {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+  // -/ &__contact /-
+.a-propos_main-content__contact {
+  grid-row: 11 / 13;
+  grid-column: 1 / 45;
+  @include mail-contact();
+}
+
+
+
+
+
+

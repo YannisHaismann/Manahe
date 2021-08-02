@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/main.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
         $(function(){
@@ -15,18 +16,18 @@
 <body>
     <header id="header"></header>
     <div class="communication_top-content">
-        <div class="communication_top-content__text">
-            <h1 class="communication_top-content__text__title">Communication<span class="top-content__text__point">.</span></h1>
+        <article class="communication_top-content__text">
+            <h1 class="communication_top-content__text__title">COMMUNICATION<span class="top-content__text__point">.</span></h1>
             <p class="communication_top-content__text__content">
                 Que vous soyez en quête d'un plan de communication fantastique, de contenu rédigé par les cousins germain de Molière ou encore d'un community
                 manager digne de ce nom, ne cherchez plus, vous êtes au bon endroit.
             </p>
-        </div>
-        <div class="communication_top-content__img">
-            <div class="communication_top-content__img__btn__redaction-de-contenu">Redaction de contenu</div>
-            <div class="communication_top-content__img__btn__reseaux-sociaux">Réseaux sociaux</div>
-            <div class="communication_top-content__img__btn__plan-de-communication">Plan de communication</div>
-        </div>
+        </article>
+        <aside class="communication_top-content__img">
+            <div class="communication_top-content__img__btn__redaction-de-contenu">Redaction de contenu<img src="public/img/croix.png" alt="croix-supprimer"></div>
+            <div class="communication_top-content__img__btn__reseaux-sociaux">Réseaux sociaux<img src="public/img/croix.png" alt="croix-supprimer"></div>
+            <div class="communication_top-content__img__btn__plan-de-communication">Plan de communication<img src="public/img/croix.png" alt="croix-supprimer"></div>
+        </aside>
     </div>
     <div class="communication_main-content">
         <section class="communication_plan-de-communication">
@@ -38,7 +39,8 @@
                     extra-ordinaire (en toute modestie) pour vous démarquer.
                 </p>
             </article>
-            <aside class="communication_plan-de-communication__img"></aside>
+            <aside class="communication_plan-de-communication__img">
+            </aside>
         </section>
 
         <section class="communication_redaction-du-contenu">
@@ -66,8 +68,10 @@
 
         <div class="communication_devis">
             <p>Parlez-nous un peu plus de votre projet pour que nous puissions élaborer, ensemble, un devis du tonerre !</p>
-            <a href="#">Faire un devis</a>
-            <img src="public/img/tout-savoir-com.png" alt="on-veut-tout-savoir">
+            <div class="communication_devis__contact__link">
+                <a href="#">Faire un devis</a>
+                <img src="public/img/tout-savoir-com.png" alt="on-veut-tout-savoir">
+            </div>
         </div>
     </div>
     <footer id="footer"></footer>

@@ -1,0 +1,51 @@
+// A PROPOS BOX
+
+@mixin a-propos-box($title-color, $content-color, $taille-border, $border-color){
+  border:         $taille-border solid $border-color;
+  border-radius:  15px;
+  font-family:    'Comfortaa', cursive;
+  & > h3{
+    @media (max-width: $tablet) {
+      margin: 40px 40px 5px 40px;
+    }
+    @media (min-width: $tablet) {
+      margin: 80px 70px 5px 70px;
+    }
+    letter-spacing: -0.2px;
+    font-weight: 700;
+    color: $title-color;
+    &::after{
+      margin-top: 5px;
+      content: "";
+      display: block;
+      @media (max-width: $mobile) {
+        width: 60px;
+      }
+      @media (min-width: $mobile) and (max-width: $tablet) {
+        width: 70px;
+      }
+      @media (min-width: $tablet) and (max-width: $screen) {
+        width: 100px;
+      }
+      @media (min-width: $screen) {
+        width: 120px;
+      }
+      height: 0px;
+      border: 2px solid $title-color;
+      background-color: $title-color;
+      border-radius: 200px;
+    }
+  }
+  & > p {
+    @media (max-width: $tablet) {
+      margin: 20px 40px 40px 40px;
+    }
+    @media (min-width: $tablet) {
+      margin: 25px 70px 70px 70px;
+    }
+    line-height: 1.5;
+    letter-spacing: -0.4px;
+    color: $content-color;
+  }
+}
+

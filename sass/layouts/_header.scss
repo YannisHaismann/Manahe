@@ -14,10 +14,15 @@
     &__logo{
       width: 156px;
     }
+    &__internal-link-list{
+      & *{
+        display: none;
+      }
+    }
   }
 }
 
-@media (max-width: $tablet) {
+@media (min-width: $mobile) and (max-width: $tablet) {
 .header_top-nav{
   padding: 30px 0px 0px 50px;
   &__logo{

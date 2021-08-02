@@ -1,0 +1,162 @@
+@mixin mail-contact() {
+    padding: 20px;
+    color: $blue;
+    font-family: 'Comfortaa', cursive;
+
+    &::before {
+      content: "";
+      display: block;
+      background-color: lightgrey;
+      margin: auto;
+      border-radius: 100px;
+    }
+
+    & > p {
+      font-weight: 700;
+    }
+
+    & > div {
+      position: relative;
+
+      & > a {
+        position: absolute;
+        @include basic-btn($orange);
+      }
+
+      & > img {
+        position: absolute;
+      }
+    }
+  @media(max-width: $mobile) {
+      &::before {
+        height: 2px;
+        width: 60%;
+      }
+
+      & > p {
+        font-size: 16px;
+        margin: 20px 0px 40px;
+        text-align: center;
+      }
+
+      & > div {
+        height: 150px;
+        width: 0px;
+        margin: auto;
+
+        & > a {
+          font-size: 11px;
+          display: block;
+          width: 80px;
+          padding: 10px 20px;
+          margin: auto;
+          left: -62px;
+        }
+
+        & > img {
+          width: 136px;
+          left: 30px;
+          top: 30px;
+        }
+      }
+    }
+  @media (min-width: $mobile) and (max-width: $tablet) {
+      &::before {
+        height: 2px;
+        width: 60%;
+      }
+
+      & > p {
+        font-size: 20px;
+        margin: 40px 20px 40px;
+        text-align: center;
+      }
+
+      & > div {
+        height: 150px;
+        width: 0px;
+        margin: auto;
+
+        & > a {
+          font-size: 14px;
+          display: block;
+          width: 120px;
+          padding: 12px 24px;
+          margin: auto;
+          left: -90px;
+        }
+
+        & > img {
+          width: 136px;
+          left: 60px;
+          top: 30px;
+        }
+      }
+    }
+  @media (min-width: $tablet) and (max-width: $screen) {
+      &::before {
+        height: 2px;
+        width: 60%;
+      }
+
+      & > p {
+        font-size: 22px;
+        margin: 50px 40px 40px;
+        text-align: center;
+      }
+
+      & > div {
+        height: 200px;
+        width: 0px;
+        margin: auto;
+
+        & > a {
+          font-size: 18px;
+          display: block;
+          width: 140px;
+          padding: 16px 32px;
+          margin: auto;
+          left: -105px;
+        }
+
+        & > img {
+          width: 206px;
+          left: 80px;
+          top: 40px;
+        }
+      }
+    }
+  @media (min-width: $screen) {
+      &::before {
+        height: 2px;
+        width: 60%;
+      }
+
+      & > p {
+        font-size: 28px;
+        margin: 50px 40px 40px;
+        text-align: center;
+      }
+
+      & > div {
+        height: 200px;
+        width: 0px;
+        margin: auto;
+
+        & > a {
+          font-size: 20px;
+          display: block;
+          width: 160px;
+          padding: 18px 36px;
+          margin: auto;
+          left: -120px;
+        }
+
+        & > img {
+          width: 206px;
+          left: 110px;
+          top: 50px;
+        }
+      }
+    }
+  }
