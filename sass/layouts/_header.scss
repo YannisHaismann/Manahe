@@ -1,3 +1,16 @@
+.header-other-colors > nav{
+  background-color: white!important;
+  & > ul{
+    & > li{
+      & > a{
+        color: $blue!important;
+        font-weight: 700;
+        @include nav-header-btn($blue, $orange!important);
+      }
+    }
+  }
+}
+
 // -/ GENERAL /-
 .header_top-nav{
   background-color: $orange;

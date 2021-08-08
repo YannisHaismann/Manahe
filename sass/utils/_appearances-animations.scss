@@ -1,0 +1,51 @@
+@keyframes appears-from-top-animation {
+  0%{
+    transform: translateY(-300px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+@media (min-width: $tablet){
+  #accueil-top, .accueil-header{
+    animation: appears-from-top-animation 800ms;
+  }
+}
+
+@keyframes a-propos-text-disapears{
+  0%{
+    transform: translateY(0px);
+  }
+  40%{
+    opacity: 0.3;
+  }
+  100%{
+    transform: translateY(60px);
+    opacity: 0;
+  }
+}
+
+@keyframes a-propos-text-appears{
+  0%{
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  40%{
+    opacity: 0.3;
+  }
+  100%{
+    transform: translateY(60px);
+  }
+}
+
+@media (min-width: $tablet) {
+  .anim-letter-disapears{
+    display: inline-block;
+    animation: a-propos-text-disapears 500ms ease-in forwards 1000ms;
+  }
+  .anim-letter-appears{
+    display: inline-block;
+    animation: a-propos-text-appears 500ms ease-in forwards 500ms;
+  }
+}
+

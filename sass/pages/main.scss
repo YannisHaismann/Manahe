@@ -140,7 +140,7 @@
     padding: 60px;
     text-align: center;
     font-size: 22px;
-    height: 500px;
+    height: 400px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     &__main-text{
@@ -154,7 +154,7 @@
     padding: 100px;
     text-align: center;
     font-size: 28px;
-    height: 400px;
+    height: 350px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     &__main-text{
@@ -168,7 +168,7 @@
     padding: 200px;
     text-align: center;
     font-size: 46px;
-    height: 400px;
+    height: 350px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     &__main-text{
@@ -182,7 +182,7 @@
     padding: 300px;
     text-align: center;
     font-size: 52px;
-    height: 400px;
+    height: 350px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     &__main-text{
@@ -194,7 +194,7 @@
 // &__mid
 
 .main_main-content__mid{
-  height: 650px;
+  height: 700px;
   &-text{
     &__title{
       color: $blue;
@@ -253,7 +253,7 @@
 @media (min-width: $mobile) and (max-width: $tablet) {
   @media (max-width: 750px) {
     .main_main-content__mid {
-      height: 650px;
+      height: 750px;
       &-img {
         display: block;
         margin: auto;
@@ -267,7 +267,7 @@
   }
   @media (min-width: 751px){
     .main_main-content__mid{
-      height: 420px;
+      height: 520px;
       margin-top: 50px;
       display: grid;
       grid-template-columns: 50% 50%;
@@ -323,6 +323,7 @@
     padding: 50px;
     display: grid;
     grid-template-columns: 50% 50%;
+    height: 780px;
     &-img{
       grid-row: 1;
       grid-column: 2;
@@ -369,6 +370,7 @@
     padding: 80px;
     display: grid;
     grid-template-columns: 50% 50%;
+    height: 820px;
     &-img{
       grid-row: 1;
       grid-column: 2;

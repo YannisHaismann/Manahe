@@ -80,7 +80,6 @@
     width: 200px;
     &:hover {
       color: $hover-color;
-
       &::after {
         animation: top-nav-hover 250ms ease-in-out forwards;
         display: block;

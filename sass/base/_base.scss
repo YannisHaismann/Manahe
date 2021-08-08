@@ -26,3 +26,93 @@ $screen: 1824px;
   padding: 0px;
   font-weight: normal;
 }
+
+// -/- CURSOR -/-
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 white, 0 0 0 0 white;
+  }
+  10%{
+    transform: scale(0.95);
+  }
+  40%{
+    transform: scale(1.1);
+  }
+  80%{
+    transform: scale(1);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 64, 0), 0 0 0 30px rgba(255, 0, 64, 0);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  5%{
+    transform: scale(1.05);
+  }
+  40%{
+    transform: scale(0.8);
+  }
+  80%{
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+}@keyframes shrink-reverse {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  20%{
+    opacity: 0.9;
+  }
+  40%{
+    transform: scale(0.2);
+  }
+  95%{
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+ @media screen and (min-width: $tablet) {
+   html {
+     cursor: url("../img/white-point.png"), auto;
+
+     & :hover {
+       cursor: url("../img/white-point.png"), auto;
+     }
+   }
+   #cursor {
+     pointer-events: none;
+     z-index: 1000;
+     height: 70px;
+     width: 70px;
+     border-radius: 70px;
+     background-color: rgba(239, 120, 82, 0.7);
+     position: absolute;
+     border: solid 12px white;
+   }
+
+   .cursor-pulse {
+     animation: pulse 350ms ease-in-out;
+   }
+
+   .cursor-shrink {
+     animation: shrink 150ms ease-in forwards;
+   }
+   .cursor-shrink-reverse {
+     animation: shrink-reverse 150ms ease-in forwards;
+   }
+ }

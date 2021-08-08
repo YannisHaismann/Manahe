@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/load.js"></script>
     <script type="text/javascript">
-        $(function(){
-            $("#header").load("header.html");
-            $("#footer").load("footer.html");
+        $(document).ready(function() {
+            if(!($("#header").addClass("header-other-colors"))) {
+                $("#header").addClass("header-other-colors");
+            }
         });
     </script>
     <title>Manahé</title>
 </head>
 <body>
+<div id="cursor"></div>
     <header id="header"></header>
     <div class="services_main-content">
         <div class="services_nos-services">
@@ -33,7 +36,7 @@
                 <h2 class="services_design__text__title">DESIGN<span class="services_design__text__point">.</span></h2>
                 <p class="services_design__text__title__content">Amet perspiciatis quas ratione repellat soluta voluptas.
                     Animi aspernatur culpa dicta ducimus, vitae.</p>
-                <a class="services_design__text__title__link" href="[EN SAVOIR PLUS]">En savoir plus</a>
+                <a class="services_design__text__title__link" href="design.html">En savoir plus</a>
             </article>
             <aside class="services_design__img">
                 <div class="services_design__img__identite-graphique">Identité graphique <img src="public/img/croix.png" alt="croix-supprimer"></div>
@@ -47,7 +50,7 @@
                 <h2 class="services_communication__text__title">COMMUNICATION<span class="services_communication__text__point">.</span></h2>
                 <p class="services_communication__text__title__content">Amet perspiciatis quas ratione repellat soluta voluptas.
                     Animi aspernatur culpa dicta ducimus, vitae.</p>
-                <a class="services_communication__text__title__link" href="[EN SAVOIR PLUS]">En savoir plus</a>
+                <a class="services_communication__text__title__link" href="communication.html">En savoir plus</a>
             </article>
             <aside class="services_communication__img">
                 <div class="services_communication__img__redaction-de-contenu">Redaction de contenu <img src="public/img/croix.png" alt="croix-supprimer"></div>
@@ -60,7 +63,7 @@
             <article class="services_site-internet__text">
                 <h2 class="services_site-internet__text__title">SITE INTERNET<span class="design__text__point">.</span></h2>
                 <p class="services_site-internet__text__title__content">Consectetur adipisicing elit, eveniet facere minima modi nesciunt pariatur perferendis similique sunt, vitae.</p>
-                <a class="services_site-internet__text__title__link" href="[EN SAVOIR PLUS]">En savoir plus</a>
+                <a class="services_site-internet__text__title__link" href="site-internet.html">En savoir plus</a>
             </article>
             <aside class="services_site-internet__img">
                 <div class="services_site-internet__img__realisation-de-maquette">Réalisation de maquette <img src="public/img/croix.png" alt="croix-supprimer"></div>
