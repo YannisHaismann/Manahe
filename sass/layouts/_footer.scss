@@ -42,8 +42,12 @@ footer a{
     }
   }
   .footer_copyright{
+    margin-top: -1px;
     text-align: center;
     font-size: 12px;
+    &__text{
+
+    }
   }
 }
 

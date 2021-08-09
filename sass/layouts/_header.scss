@@ -26,7 +26,11 @@
 
 // -/ GENERAL /-
 .header_top-nav{
+  margin-bottom: -2px;
   background-color: $orange;
+  &__logo{
+    margin-bottom: 2px;
+  }
   & *{
     color: white;
     font-family: 'Comfortaa', cursive;

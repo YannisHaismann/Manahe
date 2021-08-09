@@ -153,6 +153,7 @@ footer a {
   }
 
   .footer_copyright {
+    margin-top: -1px;
     text-align: center;
     font-size: 12px;
   }
@@ -281,7 +282,11 @@ footer a {
 }
 
 .header_top-nav {
+  margin-bottom: -2px;
   background-color: #EF7852;
+}
+.header_top-nav__logo {
+  margin-bottom: 2px;
 }
 .header_top-nav * {
   color: white;
@@ -878,6 +883,7 @@ footer a {
     margin: 0px auto 0px auto;
     grid-column: 2;
     grid-row: 1;
+    width: 350px !important;
   }
   .main_main-content__mid-text {
     grid-column: 1;
