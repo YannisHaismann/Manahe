@@ -25,7 +25,7 @@ $(document).ready(function() {
             setTimeout(function(){$('#cursor').removeClass('cursor-pulse');}, 350);
         }
     });
-    if(window.location.pathname == "/Manah%C3%A9/services.html" || window.location.pathname == "/Manah%C3%A9/a-propos.html"){
+    if(window.location.pathname == "/Manah%C3%A9/services.html" || window.location.pathname == "/Manah%C3%A9/a-propos.html" || window.location.pathname == "/Manahe/services.html" || window.location.pathname == "/Manahe/a-propos.html"){
         $('.header_top-nav__logo').attr("src", "public/img/logo.png");
     }
 
