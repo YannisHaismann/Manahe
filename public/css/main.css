@@ -5549,7 +5549,7 @@ footer a {
     letter-spacing: -2px;
   }
   .communication_plan-de-communication > aside {
-    background-image: url("../img/plan-com-3D.png");
+    background-image: url("../img/plan-com-3d.png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: 100%;
@@ -5635,7 +5635,7 @@ footer a {
 }
 @media (min-width: 480px) and (max-width: 1224px) {
   .communication_plan-de-communication > aside {
-    background-image: url("../img/plan-com-3D.png");
+    background-image: url("../img/plan-com-3d.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: right;
@@ -5709,7 +5709,7 @@ footer a {
     font-size: 40px !important;
   }
   .communication_plan-de-communication > aside {
-    background-image: url("../img/plan-com-3D.png");
+    background-image: url("../img/plan-com-3d.png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: 100%;
@@ -5778,7 +5778,7 @@ footer a {
     font-size: 55px !important;
   }
   .communication_plan-de-communication > aside {
-    background-image: url("../img/plan-com-3D.png");
+    background-image: url("../img/plan-com-3d.png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: 100%;
@@ -6071,7 +6071,7 @@ footer a {
     font-size: 55px !important;
   }
   .communication_redaction-du-contenu > aside {
-    background-image: url("../img/redaction-3D.png");
+    background-image: url("../img/redaction-3d.png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: 100%;
