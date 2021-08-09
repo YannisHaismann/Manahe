@@ -28,5 +28,13 @@ $(document).ready(function() {
     if(window.location.pathname == "/Manah%C3%A9/services.html" || window.location.pathname == "/Manah%C3%A9/a-propos.html"){
         $('.header_top-nav__logo').attr("src", "public/img/logo.png");
     }
+
+    //MOBILE NAV HAMBURGER BTN
+    $('#mobile-nav-btn').on("click", function(e){
+        $('#header_mobile-top-nav').addClass("header_mobile-top-nav__show");
+    });
+    $('#header_mobile-top-nav__cross').on("click", function(e){
+        $('#header_mobile-top-nav').removeClass("header_mobile-top-nav__show");
+    });
 });
 

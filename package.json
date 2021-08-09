@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:public/css/main.css"
+    "sass": "sass --watch ./sass/main.scss:public/css/main.css",
+    "prefix": "postcss ./public/css/main.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "author": "Yannis Haismann",
+  "browserslist": "last 4 versions",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.37.5"

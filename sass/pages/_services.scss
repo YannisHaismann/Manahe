@@ -217,7 +217,7 @@
     grid-template-rows: repeat(11, 1fr);
     grid-template-columns: repeat(11, 1fr);
     & > article{
-      width: 572px;
+      width: 400px;
       grid-column: 2 / 11;
       @media (max-width: 950px){
         grid-row: 2 / 11;
@@ -226,10 +226,11 @@
         grid-row: 5 / 8;
       }
       & > p{
-        width: 450px;
+        width: 400px;
       }
       & > h2{
         margin-bottom: 5px;
+        width: 350px;
       }
     }
     & > aside{

@@ -6,28 +6,28 @@
     position: absolute;
     content: "";
     display: inline-block;
-    width: 60px;
-    height: 10px;
+    width: 40px;
+    height: 5px;
     background-color: $color;
     border-radius: 10px;
   }
   &::before{
     position: absolute;
-    top: 20px;
+    top: 12px;
     left: $position;
     content: "";
     display: inline-block;
-    width: 40px;
-    height: 10px;
+    width: 28px;
+    height: 5px;
     background-color: $color;
     border-radius: 10px;
   }
   & > div{
     position: absolute;
-    top: 40px;
+    top: 24px;
     display: inline-block;
-    width: 60px;
-    height: 10px;
+    width: 40px;
+    height: 5px;
     background-color: $color;
     border-radius: 10px;
   }

@@ -19,7 +19,7 @@ function changeWords(el, word, i){
     setTimeout(function (){
         setTimeout(function () {
             el.removeClass("anim-letter-disapears");
-            el.css("top", "-60px");
+            el.css("top", "-65px");
             el.text(word);
             el.addClass("anim-letter-appears");
         }, (2000 * (i + 1)));

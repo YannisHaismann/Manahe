@@ -1,5 +1,18 @@
 .header-other-colors > nav{
   background-color: white!important;
+  & > div{
+    & > div{
+      & > div{
+        background-color: $orange!important;
+      }
+      &::after{
+        background-color: $orange!important;
+      }
+      &::before{
+        background-color: $orange!important
+      }
+    }
+  }
   & > ul{
     & > li{
       & > a{
@@ -19,11 +32,54 @@
     font-family: 'Comfortaa', cursive;
   }
 }
+.header_mobile-top-nav{
+  display: none;
+}
 
 // -/ MOBILE & TABLET /-
 @media (max-width: $mobile) {
+  .header_mobile-top-nav{
+    z-index: 100;
+    display: block;
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(242, 242, 242);
+    top: -700px;
+    left: 0px;
+    transition: all 400ms ease-in-out;
+    & > .header_mobile__top-nav__internal-link-list{
+      display: block;
+      height: 200px;
+      width: 100%;
+      margin: 250px auto;
+      & > li {
+        text-align: center;
+        margin: 25px;
+        &> a{
+          @include nav-header-btn($blue, $orange);
+          margin: 20px;
+          font-weight: 700;
+          font-size: 24px;
+        }
+      }
+    }
+    & > .header_mobile-top-nav__cross{
+      background: url("../img/blue-cross.png") center;
+      position: absolute;
+      right: 40px;
+      top: 30px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .header_mobile-top-nav__show{
+    transform: translateY(700px);
+  }
   .header_top-nav{
     padding: 20px 0px 0px 35px;
+    display: flex;
+    justify-content: space-between;
     &__logo{
       width: 156px;
     }
@@ -32,10 +88,61 @@
         display: none;
       }
     }
+    &__mobile-btn{
+      display: inline-block;
+      height: 35px;
+      width: 45px;
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      & > div{
+        height: 35px;
+        width: 45px;
+        @include top-mobile-hamburger(white, 0px);
+      }
+    }
   }
 }
 
 @media (min-width: $mobile) and (max-width: $tablet) {
+  .header_mobile-top-nav{
+    z-index: 100;
+    display: block;
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(242, 242, 242);
+    top: -700px;
+    left: 0px;
+    transition: all 400ms ease-in-out;
+    & > .header_mobile__top-nav__internal-link-list{
+      display: block;
+      height: 200px;
+      width: 100%;
+      margin: 250px auto;
+      & > li {
+        text-align: center;
+        margin: 30px;
+        &> a{
+          @include nav-header-btn($blue, $orange);
+          margin: 20px;
+          font-weight: 700;
+          font-size: 32px;
+        }
+      }
+    }
+    & > .header_mobile-top-nav__cross{
+      background: url("../img/blue-cross.png") center;
+      position: absolute;
+      right: 40px;
+      top: 30px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .header_mobile-top-nav__show{
+    transform: translateY(700px);
+  }
 .header_top-nav{
   padding: 30px 0px 0px 50px;
   &__logo{
@@ -44,6 +151,19 @@
   &__internal-link-list{
     & *{
       display: none;
+    }
+  }
+  &__mobile-btn{
+    display: inline-block;
+    height: 35px;
+    width: 45px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    & > div{
+      height: 35px;
+      width: 45px;
+      @include top-mobile-hamburger(white, 0px);
     }
   }
 }
